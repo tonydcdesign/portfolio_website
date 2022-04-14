@@ -1,0 +1,57 @@
+@font-face {
+    src: url(fonts/Avenir\ Next.ttc);
+    font-family: avenir light;
+}
+
+body {
+    background-color: rgb(223, 237, 242);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr,1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "d"
+    "c h"
+}
+
+.side-nav {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(164, 181, 191);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.logo{
+    display: block;
+    margin-left: -20px;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.nav-links {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 5%;
+    line-height: 10px;
+    padding: 0;
+    font-family: avenir;
+    font-size: 25px;
+}
+
+.nav-links li {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.nav-links li a{
+    color: rgb(40, 55, 64);
+    text-decoration: none;
+}
