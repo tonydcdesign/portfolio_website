@@ -6,12 +6,10 @@
 body {
     background-color: rgb(223, 237, 242);
 }
-.container{
-    margin-left: 60%;
-    margin-top: 0%;
-    color: rgb(40, 55, 64);
-}
 
+.container{
+    margin-left: 0%;
+}
 
 *{
     margin:0;
@@ -46,9 +44,9 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     justify-content: space-between;
-    width: 15%;
-    margin-right: 5%;
-    margin-top: 5%;
+    width: 10%;
+    margin-right: 8%;
+    margin-top: 8%;
     display: inline;
     float: right;
 }
@@ -94,15 +92,23 @@ body {
 }
 
 
-.design-pieces{
-    margin-left: 20%;
-}
-
 .clarinet-poster{
-    width: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
 }
 
-@media only screen and (min-width: 1200px) {
+.font-book-cover{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
     
 
     .side-nav {
@@ -115,26 +121,13 @@ body {
         padding: 20px;
     }
 
-    .nav-links {
-            position: absolute;
-            list-style-type: none;
-            /* margin-left: 10%; */
-            line-height: 10px;
-            font-family: avenir;
-            font-size: 35px;
-            display: block;
-    }
+    
 
     .toggle-button{
         display: none;
     }
 
-    .brand-name{
-            width: 40%;
-            margin-left: 55%;
-            margin-top: 20%;
-    }
-
+   
     .logo{
             display: block;
             margin-left: -20px;
@@ -153,17 +146,17 @@ body {
         font-size: 35px;
         display: block;
         margin-top: 90%;
-}
+        padding-left: 10%;
+    }
 
-.nav-links ul {
-    width: 100%;
-    
-    flex-direction: column;
-    margin-left: -50%;
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left: -50%;
     }
         
     .nav-links li {
-            padding: 10px;
+            /* padding: 10px; */
             margin-left: 30px;   
     }
         
@@ -176,5 +169,35 @@ body {
             color: rgb(242, 100, 87);
     }
 
+    .design-pieces{
+        margin-left: 15%;
+        margin-top: 5%;
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: 2fr, 1fr;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-areas: 
+            "c f";
+    
+    }
+    
+    .clarinet-poster{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-area: c;
+    }
 
-        }
+    .font-book-cover{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-area: f;
+    }
+
+}
+
+
+     

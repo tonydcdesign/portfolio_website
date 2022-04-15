@@ -46,9 +46,9 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     justify-content: space-between;
-    width: 15%;
-    margin-right: 5%;
-    margin-top: 5%;
+    width: 10%;
+    margin-right: 8%;
+    margin-top: 8%;
     display: inline;
     float: right;
 }
@@ -94,8 +94,8 @@ body {
 }
 
 .brand-name{
-    width: 50%;
-    margin-left: 50%;
+    width: 60%;
+    margin-left: 35%;
     margin-top: 30%;
 }
 
@@ -104,17 +104,6 @@ hr{
     /* border-width: 5px; */
     background-color: rgb(40, 55, 64)
 }
-
-/* .piece-1{
-    margin-top: 0%;
-    margin-left: 20%;
-}
-
-.piece-2{
-    margin-top: 0%;
-    margin-left: 20%;
-} */
-
 
 .headspace{
     width: 90%;
@@ -138,6 +127,7 @@ hr{
     margin-top: 5%;
 }
 
+
 @media only screen and (min-width: 1000px) {
     
 
@@ -151,26 +141,13 @@ hr{
         padding: 20px;
     }
 
-    .nav-links {
-            position: absolute;
-            list-style-type: none;
-            /* margin-left: 10%; */
-            line-height: 10px;
-            font-family: avenir;
-            font-size: 35px;
-            display: block;
-    }
+    
 
     .toggle-button{
         display: none;
     }
 
-    .brand-name{
-            width: 40%;
-            margin-left: 55%;
-            margin-top: 20%;
-    }
-
+   
     .logo{
             display: block;
             margin-left: -20px;
@@ -189,17 +166,18 @@ hr{
         font-size: 35px;
         display: block;
         margin-top: 90%;
-}
+        padding-left: 10%;
+    }
 
-.nav-links ul {
-    width: 100%;
-    
-    flex-direction: column;
-    margin-left: -50%;
+    .nav-links ul {
+        width: 100%;
+        
+        flex-direction: column;
+        margin-left: -50%;
     }
         
     .nav-links li {
-            padding: 10px;
+            /* padding: 10px; */
             margin-left: 30px;   
     }
         
@@ -213,7 +191,7 @@ hr{
     }
 
     .brand-name{
-        width: 50%;
+        width: 45%;
         margin-left: 50%;
         margin-top: 20%;
     }
@@ -240,6 +218,7 @@ hr{
             padding-left: 5%;
             padding-right: 5%;
             margin-top: 10%;
+            padding-bottom: 640%;
             grid-area: h
         
         }
@@ -258,7 +237,6 @@ hr{
         margin-left: 10%;
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 60%;
         grid-area: f;
     }
 

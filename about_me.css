@@ -43,9 +43,9 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     justify-content: space-between;
-    width: 15%;
-    margin-right: 5%;
-    margin-top: 5%;
+    width: 10%;
+    margin-right: 8%;
+    margin-top: 8%;
     display: inline;
     float: right;
 }
@@ -86,6 +86,7 @@ body {
     text-decoration: none;
 }
 
+
 .nav-links li a:hover{
     color: rgb(242, 100, 87);
 }
@@ -96,7 +97,6 @@ padding-right: 5%;
 }
 
 .name{
-    grid-area: h;
     width: 100%;
     margin-top: 10%;
     /* margin-left: -30%; */
@@ -104,36 +104,34 @@ padding-right: 5%;
 
 
 .about-paragraph {
-    grid-area: b;
     font-family: avenir;
-}
-
-p {
     color: rgb(40, 55, 64);
 }
 
+
 .resume-button{
     width: 30%;
+    margin-top: 10%;
 }
 
 .self-portrait{
-    grid-area: p;
-    /* margin-left: -60%; */
     margin-top: 20%;
     width: 100%;
 }
 
-
+.contact{
+    margin-top: 10%;
+}
 
 .instagram-logo{
-    width: 20%;
+    width: 10%;
 }
 
 .mail-logo{
-    width: 20%;
+    width: 10%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     
 
     .side-nav {
@@ -160,12 +158,6 @@ p {
         display: none;
     }
 
-    .brand-name{
-            width: 40%;
-            margin-left: 55%;
-            margin-top: 20%;
-    }
-
     .logo{
             display: block;
             margin-left: -20px;
@@ -184,6 +176,7 @@ p {
         font-size: 35px;
         display: block;
         margin-top: 90%;
+        padding-left: 10%;
 }
 
     .nav-links ul {
@@ -194,7 +187,7 @@ p {
     }
         
     .nav-links li {
-            padding: 10px;
+            /* padding: 10px; */
             margin-left: 30px;   
     }
         
@@ -230,9 +223,6 @@ p {
         .about-paragraph {
             grid-area: b;
             font-family: avenir;
-        }
-        
-        p {
             color: rgb(40, 55, 64);
         }
         
@@ -245,6 +235,10 @@ p {
             margin-left: -60%;
             margin-top: 20%;
             width: 100%;
+        }
+
+        .instagram-logo{
+            grid-area: i;
         }
 
         }
