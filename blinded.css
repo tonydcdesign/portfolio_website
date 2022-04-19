@@ -93,47 +93,6 @@ body {
     color: rgb(242, 100, 87);
 }
 
-.brand-name{
-    width: 60%;
-    margin-left: 35%;
-    margin-top: 30%;
-}
-
-hr{
-    height: 5px;
-    /* border-width: 5px; */
-    background-color: rgb(40, 55, 64)
-}
-
-.headspace{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 10%;
-
-}
-
-.clarinet-poster{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
-}
-
-.font-book-cover{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
-}
-
-.blinded{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
-}
-
 
 @media only screen and (min-width: 1000px) {
     
@@ -196,69 +155,4 @@ hr{
     .nav-links li a:hover{
             color: rgb(242, 100, 87);
     }
-
-    .brand-name{
-        width: 45%;
-        margin-left: 50%;
-        margin-top: 20%;
-    }
-    
-    hr{
-        height: 5px;
-        /* border-width: 5px; */
-        background-color: rgb(40, 55, 64)
-    }
-
-    .container{
-            margin-left: 15%;
-            display: grid;
-            grid-gap: 3px;
-            grid-template-columns: 2fr, 1fr;
-            grid-template-areas: 
-            "h c"
-            "f b";
-    }
-    .headspace{
-            width: 80%;
-            margin-left: 15%;
-            padding-left: 5%;
-            padding-right: 5%;
-            margin-top: 5%;
-            grid-area: h;
-            display: inline-block;
-        
-        }
-        
-    .clarinet-poster{
-        width: 80%;
-        /* margin-left: 10%; */
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 5%;
-        grid-area: c;
-        display: inline-block;
-    }
-
-    .font-book-cover{
-        width: 80%;
-        margin-left: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: -34%;
-        grid-area: f;
-        display: inline-block;
-    }
-
-    .blinded{
-        width: 80%;
-        /* margin-left: 10%; */
-        padding-left: 5%;
-        padding-right: 5%;
-        grid-area: b;
-        display: inline-block;
-    }
-
 }
-
-
-     

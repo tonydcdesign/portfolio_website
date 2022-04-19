@@ -93,31 +93,12 @@ body {
     color: rgb(242, 100, 87);
 }
 
-.brand-name{
-    width: 60%;
-    margin-left: 35%;
-    margin-top: 30%;
-}
-
-hr{
-    height: 5px;
-    /* border-width: 5px; */
-    background-color: rgb(40, 55, 64)
-}
-
-.headspace{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+.title{
     margin-top: 10%;
-
-}
-
-.clarinet-poster{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
+    margin-left: 10%;
+    font-family: avenir;
+    font-size: 35px;
+    color: rgb(40, 55, 64);
 }
 
 .font-book-cover{
@@ -127,7 +108,49 @@ hr{
     margin-top: 5%;
 }
 
-.blinded{
+.font-book-front-cover{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-inside-cover{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-spread1{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-spread2{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-spread3{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-spread4{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.font-book-spread5{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
@@ -197,68 +220,10 @@ hr{
             color: rgb(242, 100, 87);
     }
 
-    .brand-name{
-        width: 45%;
-        margin-left: 50%;
-        margin-top: 20%;
+    .title{
+        margin-left: 30%;
+        font-family: avenir;
+        font-size: 50px;
+        color: rgb(40, 55, 64);
     }
-    
-    hr{
-        height: 5px;
-        /* border-width: 5px; */
-        background-color: rgb(40, 55, 64)
-    }
-
-    .container{
-            margin-left: 15%;
-            display: grid;
-            grid-gap: 3px;
-            grid-template-columns: 2fr, 1fr;
-            grid-template-areas: 
-            "h c"
-            "f b";
-    }
-    .headspace{
-            width: 80%;
-            margin-left: 15%;
-            padding-left: 5%;
-            padding-right: 5%;
-            margin-top: 5%;
-            grid-area: h;
-            display: inline-block;
-        
-        }
-        
-    .clarinet-poster{
-        width: 80%;
-        /* margin-left: 10%; */
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 5%;
-        grid-area: c;
-        display: inline-block;
-    }
-
-    .font-book-cover{
-        width: 80%;
-        margin-left: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: -34%;
-        grid-area: f;
-        display: inline-block;
-    }
-
-    .blinded{
-        width: 80%;
-        /* margin-left: 10%; */
-        padding-left: 5%;
-        padding-right: 5%;
-        grid-area: b;
-        display: inline-block;
-    }
-
 }
-
-
-     
