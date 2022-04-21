@@ -19,7 +19,8 @@ body {
 
 .side-nav {
     display: inline-block;
-    position: relative;
+    position: fixed;
+    top: 0;
     justify-content: space-between;
     background-color: rgb(164, 181, 191);
     
@@ -92,12 +93,22 @@ body {
     color: rgb(242, 100, 87);
 }
 
+.fine-art-pieces{
+    margin-top: 30%;
+}
 
 .headspace{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.blinded{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -175,7 +186,30 @@ body {
     }
 
     .fine-art-pieces{
-        margin-left: 20%;
+        margin-left: 15%;
+        margin-top: 5%;
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: 2fr, 1fr;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-areas: 
+            "h b";
+    }
+    
+    .headspace{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-area: h;
+    }
+
+    .blinded{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-area: b;
     }
 
 
