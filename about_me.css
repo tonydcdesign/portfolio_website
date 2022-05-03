@@ -21,7 +21,7 @@ body {
     top: 0;
     justify-content: space-between;
     background-color: rgb(164, 181, 191);
-    
+    z-index: 150;
 
 }
 

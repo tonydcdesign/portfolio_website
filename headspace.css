@@ -7,51 +7,218 @@ body {
     background-color: rgb(223, 237, 242);
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 2fr,1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "d"
-    "c h"
-}
+*{
+    margin:0;
+    padding:0;
+    }
 
 .side-nav {
-    width: 15%;
-    height: 100%;
-    background-color: rgb(164, 181, 191);
+    display: inline-block;
     position: fixed;
     top: 0;
-    left: 0;
-    padding: 20px;
+    justify-content: space-between;
+    background-color: rgb(164, 181, 191);
+    z-index: 150;
+
 }
 
+
 .logo{
-    display: block;
+    display: absolute;
     margin-left: -20px;
 }
 
 .logo-img{
-    width: 100%;
+    width: 25%;
+    display: inline;
+    float: left;
+} 
+
+.toggle-button{
+    /* position: absolute; */
+    /* top: 35%; */
+    /* right: -15%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 10%;
+    margin-right: 8%;
+    margin-top: 8%;
+    display: inline;
+    float: right;
 }
 
 .nav-links {
-    position: absolute;
+    /* position: relative; */
+    display: none;
     list-style-type: none;
-    margin: 0;
-    margin-left: 5%;
-    line-height: 10px;
-    padding: 0;
     font-family: avenir;
-    font-size: 25px;
+    font-size: 35px;
+    line-height: 10px;
+    margin-top: 20%;
+    margin-left: -15%;
+
+}
+
+.nav-links ul {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    margin-left: -50%;
+}
+
+.nav-links.active{
+    display:block;
+    padding-bottom: 5%;
 }
 
 .nav-links li {
-    padding: 10px;
-    margin-left: 30px;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    margin-left: 15%;
 }
 
 .nav-links li a{
     color: rgb(40, 55, 64);
     text-decoration: none;
+}
+
+
+.nav-links li a:hover{
+    color: rgb(242, 100, 87);
+}
+
+.container{
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.headspace{
+    margin-top: 40%;
+    width: 100%;
+}
+
+.title{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-family: avenir;
+    font-size: 35px;
+    color: rgb(40, 55, 64);
+    /* margin-left: -30%; */
+}
+
+.paragraph {
+    font-family: avenir;
+    color: rgb(40, 55, 64);
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+
+    .side-nav {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(164, 181, 191);
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-links {
+            position: absolute;
+            list-style-type: none;
+            /* margin-left: 10%; */
+            line-height: 10px;
+            font-family: avenir;
+            font-size: 35px;
+            display: block;
+    }
+
+    .toggle-button{
+        display: none;
+    }
+
+    .logo{
+            display: block;
+            margin-left: -20px;
+    }
+        
+    .logo-img{
+            width: 100%;
+    }
+
+    .nav-links {
+        position: absolute;
+        list-style-type: none;
+        /* margin-left: 10%; */
+        line-height: 10px;
+        font-family: avenir;
+        font-size: 35px;
+        display: block;
+        margin-top: 90%;
+        padding-left: 10%;
+}
+
+    .nav-links ul {
+    width: 100%;
+    
+    flex-direction: column;
+    margin-left: -50%;
+    }
+        
+    .nav-links li {
+            /* padding: 10px; */
+            margin-left: 30px;   
+    }
+        
+    .nav-links li a{
+            color: rgb(40, 55, 64);
+            text-decoration: none;
+    }
+
+    .nav-links li a:hover{
+            color: rgb(242, 100, 87);
+    }
+
+        .container{
+            display: grid;
+            margin-left:20%;
+            /* position: relative; */
+            grid-template-columns: 2fr,1fr;
+            grid-template-rows: auto;
+            /* grid-column-gap: 150px; */
+            grid-template-areas: 
+            "p w";
+        }
+
+        .title{
+            grid-area: h;
+            width: 100%;
+            /* margin-top: -40%; */
+            /* margin-left: -30%; */
+        }
+        
+        .writing{
+            grid-area: w;
+            margin-top: 10%;
+        }
+
+        .paragraph {
+            /* grid-area: b; */
+            margin-left: 10%;
+            font-family: avenir;
+            color: rgb(40, 55, 64);
+        }
+        
+        .headspace{
+            grid-area: p;
+            /* margin-left: -60%; */
+            margin-top: 20%;
+            width: 100%;
+        }
+
+
 }

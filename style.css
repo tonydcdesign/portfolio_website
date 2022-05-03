@@ -24,7 +24,7 @@ body {
     top: 0;
     justify-content: space-between;
     background-color: rgb(164, 181, 191);
-    
+    z-index: 150;
 
 }
 
@@ -108,11 +108,57 @@ hr{
 
 }
 
+.headspace_overlay{
+    position: absolute;
+    top: 56.4%;
+    left: 5%;
+    width: 90%;
+    height: 54.9%;
+    background-color:rgb(85, 113, 88);
+    opacity: 0%;
+}
+
+.piece-1:hover .headspace_overlay{
+    opacity: 80%;
+}
+
+.headspace_text{
+    color:aliceblue;
+    text-align:center;
+    margin-top: 30%;
+    font-family: avenir;
+    font-size: 45px;
+    
+}
+
 .clarinet-poster{
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 5%;
+}
+
+.clarinet_poster_overlay{
+    position: absolute;
+    top: 115.5%;
+    left: 5%;
+    width: 90%;
+    height: 84.7%;
+    background-color:rgb(64, 101, 148);
+    opacity: 0%;
+}
+
+.clarinet_poster_overlay:hover{
+    opacity: 80%;
+}
+
+.clarinet_poster_text{
+    color:aliceblue;
+    margin-top: 30%;
+    text-align:center;
+    font-family: avenir;
+    font-size: 45px;
+    
 }
 
 .font-book-cover{
@@ -122,6 +168,28 @@ hr{
     margin-top: 5%;
 }
 
+.font_book_overlay{
+    position: absolute;
+    top: 204.3%;
+    left: 5%;
+    width: 90%;
+    height: 47.7%;
+    background-color:rgb(242, 100, 87);
+    opacity: 0%; 
+}
+
+.font_book_overlay:hover{
+    opacity: 80%
+}
+
+.font_book_text{
+    color:aliceblue;
+    margin-top: 30%;
+    text-align:center;
+    font-family: avenir;
+    font-size: 45px; 
+}
+
 .blinded{
     width: 90%;
     padding-left: 5%;
@@ -129,6 +197,27 @@ hr{
     margin-top: 5%;
 }
 
+.blinded_overlay{
+    position: absolute;
+    top: 256.1%;
+    left: 5%;
+    width: 90%;
+    height: 72.2%;
+    background-color:rgb(80, 113, 112);
+    opacity: 0%;
+}
+
+.blinded_overlay:hover{
+    opacity: 80%;
+}
+
+.blinded_text{
+    color:aliceblue;
+    margin-top: 30%;
+    text-align:center;
+    font-family: avenir;
+    font-size: 45px;   
+}
 
 @media only screen and (min-width: 1000px) {
     
@@ -223,6 +312,20 @@ hr{
             display: inline-block;
         
         }
+
+    .headspace_overlay{
+            position: absolute;
+            top: 103.9%;
+            left: 23.5%;
+            width: 33.9%;
+            height: 59.6%;
+            background-color:rgb(85, 113, 88);
+            opacity: 0%;
+        }
+        
+    .headspace_overlay:hover{
+            opacity: 80%;
+        }
         
     .clarinet-poster{
         width: 80%;
@@ -232,6 +335,20 @@ hr{
         margin-top: 5%;
         grid-area: c;
         display: inline-block;
+    }
+
+    .clarinet_poster_overlay{
+        position: absolute;
+        top: 103.9%;
+        left: 59.7%;
+        width: 33.9%;
+        height: 92%;
+        background-color:rgb(64, 101, 148);
+        opacity: 0%;
+    }
+    
+    .clarinet_poster_overlay:hover{
+        opacity: 80%;
     }
 
     .font-book-cover{
@@ -244,6 +361,20 @@ hr{
         display: inline-block;
     }
 
+    .font_book_overlay{
+        position: absolute;
+        top: 167.7%;
+        left: 23.5%;
+        width: 33.9%;
+        height: 51.7%;
+        background-color:rgb(242, 100, 87);
+        opacity: 0%; 
+    }
+    
+    .font_book_overlay:hover{
+        opacity: 80%
+    }
+
     .blinded{
         width: 80%;
         /* margin-left: 10%; */
@@ -251,6 +382,20 @@ hr{
         padding-right: 5%;
         grid-area: b;
         display: inline-block;
+    }
+
+    .blinded_overlay{
+        position: absolute;
+        top: 201.3%;
+        left: 59.7%;
+        width: 33.9%;
+        height: 78.2%;
+        background-color:rgb(80, 113, 112);
+        opacity: 0%;
+    }
+    
+    .blinded_overlay:hover{
+        opacity: 80%;
     }
 
 }

@@ -22,7 +22,7 @@ body {
     top: 0;
     justify-content: space-between;
     background-color: rgb(164, 181, 191);
-    
+    z-index: 150;
 
 }
 
@@ -102,6 +102,29 @@ body {
     padding-right: 5%;
     margin-top: 5%;
 }
+
+/* .clarinet_poster_overlay{
+    position: absolute;
+    top: 22.2%;
+    left: 5%;
+    width: 90%;
+    height: 76%;
+    background-color:rgb(64, 101, 148);
+    opacity: 0%;
+}
+
+.clarinet_poster_overlay:hover{
+    opacity: 60%;
+}
+
+.clarinet_poster_text{
+    color:aliceblue;
+    margin-top: 50%;
+    text-align:center;
+    font-family: avenir;
+    font-size: 45px;
+    
+} */
 
 .font-book-cover{
     width: 90%;
